@@ -9,6 +9,9 @@ const assertEqual = function(actual, expected) {
 
 const assertArraysEqual = function(array1, array2) {
   let booleanSwitch = true;
+  if (array1.length !== array2.length) {
+    booleanSwitch = false;
+  }
     for (let i = 0; i < array1.length; i++) {
       if (array1[i] !== array2[i]) {
         booleanSwitch = false;
