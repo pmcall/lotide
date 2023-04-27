@@ -11,9 +11,9 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(sentence) {
   //The function should take in a sentence (as a string) and then return a count of each of the letters in that sentence.
   let listKeeper = {};
-  let sanitisedSentence = sentence.toUpperCase().replace(' ', ''); 
-  sanitisedSentence = sanitisedSentence.replaceAll(' ', '')
-  console.log(sanitisedSentence)
+  let sanitisedSentence = sentence.toUpperCase().replace(' ', '');
+  sanitisedSentence = sanitisedSentence.replaceAll(' ', '');
+  console.log(sanitisedSentence);
   for (let ele of sanitisedSentence) {
     if (!listKeeper[ele]) {
       listKeeper[ele] = 1;
@@ -21,8 +21,8 @@ const countLetters = function(sentence) {
       listKeeper[ele] ++;
     }
   }
-    console.log(listKeeper);
-}
+  console.log(listKeeper);
+};
 
-countLetters("The quick brown fox jumps over the lazy dog")
+countLetters("The quick brown fox jumps over the lazy dog");
 
