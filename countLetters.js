@@ -25,3 +25,4 @@ const countLetters = function(sentence) {
 }
 
 countLetters("The quick brown fox jumps over the lazy dog")
+
