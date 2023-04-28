@@ -48,6 +48,7 @@ const eqArrays = function(array1, array2) {
   }
 };
 
+
 // TEST CODE
 // assertEqual("Bootcamp", "Bootcamp");
 // assertEqual(12, 12);
