@@ -13,7 +13,7 @@ const countLetters = function(sentence) {
   let listKeeper = {};
   let sanitisedSentence = sentence.toUpperCase();
   sanitisedSentence = sanitisedSentence.replace(/[" "]/g, "");
-  /*replaceAll stopped working because node version on vagrant is too low. Switched to replace() with regex and the global flag. ReplaceAll works on my local. Original code was 
+  /*replaceAll stopped working because node version on vagrant is too low. Switched to replace() with regex and the global flag. ReplaceAll works on my local. Original code was
     sanitisedSentence = sanitisedSentence.replaceAll(' ', '');
   */
   console.log(sanitisedSentence);

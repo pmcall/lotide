@@ -59,9 +59,6 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-
-
-
 const banana = {colour: "Yellow"};
 const mango = {colour: "Yellow"};
 const blueberry = {colour: "Blue"};

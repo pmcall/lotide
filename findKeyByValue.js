@@ -17,14 +17,14 @@ const findKeyByValue = function(listOfShows, value) {
     //   return undefined;
     }
   }
-}
+};
 
 // TEST CODE
 // assertEqual("Bootcamp", "Bootcamp");
 // assertEqual(1, 12);
 
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
   comedy: "The Golden Girls",
   drama:  "The Wire",
   kids: "Sabrina, the teenage witch",
@@ -37,7 +37,7 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);//p
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), undefined);//fail
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Sabrina, the teenage witch"), "kids");//pass
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Golden Girls"), "comedy");//pass
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Golden Girls"), "sci_fi");//fail
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Golden Girls"), "sciFi");//fail
 
 
 
