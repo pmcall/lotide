@@ -8,9 +8,4 @@ const assertArraysEqual = function (array1, array2) {
   }
 }
 
-assertArraysEqual(["hello", "cheese"], ["hello", "cheese"])
-assertArraysEqual(["bananas"], ["hello", 1])
-assertArraysEqual([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
-assertArraysEqual([5, 4, 3, 2, 1], [1, 2, 3, 4, 5])
-
 module.exports = assertArraysEqual;
