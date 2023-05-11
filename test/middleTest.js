@@ -1,13 +1,32 @@
-const assertArraysEqual = require("../assertArraysEqual");
+const assert = require('chai').assert;
 const middle = require("../middle");
 
-assertArraysEqual(middle([1]), []); // => []
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []); // => []
-assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
-assertArraysEqual(middle([2, 3, 5, 7, 11, 13, 17, 19]), [7, 11]);
-assertArraysEqual(middle(["who", "lives", "in", "a", "pineapple", "under", "the", "sea"]), ["a", "pineapple"]);
-assertArraysEqual(middle(["hi", "there"]), []); // => []
+describe("#middle", () => {
+  it(`returns [] for [1]`, () => {
+    assert.deepEqual(middle([1]), []);
+  });
+  it(`returns [] for [1, 2]`, () => {
+    assert.deepEqual(middle([1, 2]), []);
+  });
+  it(`returns [2] for [1, 2, 3]`, () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]);
+  });
+  it(`returns [3] for [1, 2, 3, 4, 5]`, () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5]), [3]);
+  });
+  it(`returns [2, 3] for [1, 2, 3, 4]`, () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
+  });
+  it(`returns [3, 4] for [1, 2, 3, 4, 5, 6]`, () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+  });
+  it(`returns [7, 11] for [2, 3, 5, 7, 11, 13, 17, 19]`, () => {
+    assert.deepEqual(middle([2, 3, 5, 7, 11, 13, 17, 19]), [7, 11]);
+  });
+  it(`returns ["a", "pineapple"] for ["who", "lives", "in", "a", "pineapple", "under", "the", "sea"]`, () => {
+    assert.deepEqual(middle(["who", "lives", "in", "a", "pineapple", "under", "the", "sea"]), ["a", "pineapple"]);
+  });
+  it(`returns [] for ["hi", "there"]`, () => {
+    assert.deepEqual(middle(["hi", "there"]), []);
+  });
+});
