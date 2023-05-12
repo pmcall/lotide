@@ -1,0 +1,26 @@
+{
+  "name": "@pmcall/lotide",
+  "version": "1.0.1",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmcall/lotide.git"
+  },
+  "author": "Paul McAllister",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmcall/lotide/issues"
+  },
+  "homepage": "https://github.com/pmcall/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
+}
