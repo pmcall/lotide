@@ -2,7 +2,7 @@ const eqObjects = require('../eqObjects');
 const assert = require('chai').assert;
 const inspect = require('util').inspect;
 const chalk = require("chalk");
-const chalkRainbow = require('chalk-rainbow')
+const chalkRainbow = require('chalk-rainbow');
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };

@@ -1,5 +1,5 @@
-const takeUntil = require('../takeUntil')
-const assert = require('chai').assert
+const takeUntil = require('../takeUntil');
+const assert = require('chai').assert;
 
 describe("#takeUntil", () => {
   it("Returns [1, 2, 5, 7, 2] from the array [1, 2, 5, 7, 2, -1, 2, 4, 5] and function x => x < 0", () => {

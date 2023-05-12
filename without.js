@@ -13,4 +13,4 @@ const without = function(source, itemsToRemove) {
   return listToBeReturned;
 };
 
-module.exports = without
+module.exports = without;
