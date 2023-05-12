@@ -22,5 +22,9 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "chalk-rainbow": "^1.0.0"
   }
 }

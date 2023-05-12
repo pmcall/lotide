@@ -76,7 +76,7 @@ The following functions are currently implemented:
   ```
 
 * `head(array)`: Returns the head (the item at the first index) of an array. 
-  ```json
+  ```js
   [1, 2, 3] //returns [1]
   ```
 

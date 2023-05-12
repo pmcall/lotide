@@ -14,7 +14,7 @@ const eqObjects = function(object1, object2) {
     comparisonBlooean = false;
   } else {//passed test of number of keys
     for (let ele in object1) {
-      if (typeof object1[ele] === "object") {//This should probably be Array.isArray as mentioned in the compass tip, but I went with typoeof in my original implementation and it works, so I'm going to keep it
+      if (Array.isArray(object1[ele]) === true) {
         comparisonBlooean = eqArrays(object1[ele], object2[ele]);
       } else {
         if (object1[ele] !== object2[ele]) {
