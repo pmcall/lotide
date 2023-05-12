@@ -1,7 +1,5 @@
-let tailList = [];
-
 const tail = function(tailArray) {
-  tailList = [];
+  let tailList = [];
   if (tailArray.length === 1) {
     return tailList;
   } else {
