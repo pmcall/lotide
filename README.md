@@ -62,6 +62,12 @@ The following functions are currently implemented:
   [1, 2, 3] & [3, 2, 1] //returns false
   ```
 
+* `eqObjects(object, object)`: Compares two objects and returns true if their contents match. 
+	```js
+    { a: "hello", b: "goodbye" } & { b: "goodbye", a: "hello" } //returns true
+    { a: "banana", b: "mango" } & { b: "manana", a: "bango" } //returns false
+    ```
+
 * `findKeyByValue(object, value)`: Searches an object and returns the first key which contains a value matching the given criteria. 
 	```js
   critera = "orange" 
@@ -69,6 +75,10 @@ The following functions are currently implemented:
   //returns "tangerine"
   ```
 * `findKey(object, callback)`: Similar to findKeyByValue as it searches an object and returns the first key which contains a value matching the given criteria. However, this uses a callback method instead of a simple value.
+  ```js
+  callback = x => x.count === 4
+  { "dogs": { "count" = 2 }, "cats": { "count": 3 },  "capybaras": { "count": 4 } } //returns capybaras
+  ```
 
 * `flatten(nested array)`: Returns a flattened array from a nested array. 		
   ```js
